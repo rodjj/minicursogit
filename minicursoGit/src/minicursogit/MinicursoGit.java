@@ -1,21 +1,45 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package minicursogit;
 
-/**
- *
- * @author Alunos
- */
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class MinicursoGit {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayList <Faculdade> listaDeFaculdade = new ArrayList();
+        int opc = 0;
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        while(opc != 4)
+        {
+            System.out.println("------- Menu -------");
+            System.out.println(" 1 - Inserir faculdade");
+            System.out.println(" 2 - Mostrar faculdade");
+            System.out.println(" 3 - Remover faculdade");
+            System.out.println(" 4 - Sair");
+            System.out.println(" -------------------- ");
+            opc = entrada.nextInt();
+            
+            switch(opc)
+            {
+                case 1:
+                    Faculdade faculdade = new Faculdade();
+                    System.out.println("------- Inserir Faculdade -------");
+                    System.out.println("Registro...: ");
+                    faculdade.registro = entrada.next();
+                    System.out.println("Nome.......: ");
+                    faculdade.registro = entrada.next();
+                    System.out.println("Quantidade de sala...: ");
+                    faculdade.numeroSala = entrada.nextInt();
+                    System.out.println("Quantidade de professor...: ");
+                    faculdade.numeroProfessor = entrada.nextInt();
+                    listaDeFaculdade.add(faculdade);
+                    break;
+                
+            }
+           
+        }
     }
     
 }

@@ -1,14 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package minicursogit;
 
-/**
- *
- * @author Alunos
- */
 public class Faculdade {
+    String registro;
+    String nome;
+    int numeroSala;
+    int numeroProfessor;
+
+    public String getRegistro() {
+        return registro;
+    }
+
+    public void setRegistro(String registro) {
+        this.registro = registro;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getNumeroSala() {
+        return numeroSala;
+    }
+
+    public void setNumeroSala(int numeroSala) {
+        this.numeroSala = numeroSala;
+    }
+
+    public int getNumeroProfessor() {
+        return numeroProfessor;
+    }
+
+    public void setNumeroProfessor(int numeroProfessor) {
+        this.numeroProfessor = numeroProfessor;
+    }
+    
+    
     
 }
