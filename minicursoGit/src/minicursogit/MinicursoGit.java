@@ -21,7 +21,7 @@ public class MinicursoGit {
             System.out.println(" -------------------- ");
             opc = entrada.nextInt();
             
-            switch(opc)
+            switch(opc) 
             {
                 case 1:
                     Faculdade faculdade = new Faculdade();
@@ -29,7 +29,7 @@ public class MinicursoGit {
                     System.out.println("Registro...: ");
                     faculdade.registro = entrada.next();
                     System.out.println("Nome.......: ");
-                    faculdade.registro = entrada.next();
+                    faculdade.nome = entrada.next();
                     System.out.println("Quantidade de sala...: ");
                     faculdade.numeroSala = entrada.nextInt();
                     System.out.println("Quantidade de professor...: ");
