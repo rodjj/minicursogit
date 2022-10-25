@@ -36,7 +36,40 @@ public class MinicursoGit {
                     faculdade.numeroProfessor = entrada.nextInt();
                     listaDeFaculdade.add(faculdade);
                     break;
-                
+                case 2:
+                    if(!listaDeFaculdade.isEmpty())
+                    {
+                        for(int i=0; i<listaDeFaculdade.size();i++)
+                        {
+                            Faculdade mostrar = listaDeFaculdade.get(i);
+                            System.out.println("["+i+"]-----------------");
+                            System.out.println("Registro.........: " +mostrar.registro);
+                            System.out.println("Nome.............: " +mostrar.nome);
+                            System.out.println("Numero de sala...: " +mostrar.numeroSala);
+                            System.out.println("Numero de prof...: " +mostrar.numeroProfessor);
+                        }
+                    }
+                    break;
+                case 3:
+                    if(!listaDeFaculdade.isEmpty())
+                    {
+                        String buscaRegistro;
+                        int posBuscada = -1;
+                        System.out.println("Qaul faculdade deseja buscar, informe seu registro..:");
+                        buscaRegistro = entrada.next();
+                        for(int i =0; i< listaDeFaculdade.size();i++)
+                        {
+                            if(buscaRegistro.equals(listaDeFaculdade.get(i).registro))
+                            {
+                                posBuscada = i;
+                            }
+                        }
+                        if(posBuscada != -1)
+                            {
+                                listaDeFaculdade.remove(posBuscada);
+                            }
+                    }
+                    break;
             }
            
         }
